@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { LoginService } from '../login.service';
-import { User } from '../users';
+import { User } from '../user1';
 import { ActivatedRoute, Router } from '@angular/router';
 @Component({
   selector: 'app-login',
@@ -12,7 +12,6 @@ export class LoginComponent {
   topics =['angular','react','php'];
   userModel = new User();
   id: number = 0;
-
   constructor(private router:Router,private login:LoginService,private route: ActivatedRoute){}
   ngOnInit(){
     let data = localStorage.getItem(this.userModel.name);

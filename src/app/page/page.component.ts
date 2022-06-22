@@ -1,12 +1,12 @@
-import { Component } from '@angular/core';
-import { OnInit } from '@angular/core';
-import { AppServiceService } from './app-service.service';
+import { Component, OnInit } from '@angular/core';
+import { AppServiceService } from '../app-service.service';
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss']
+  selector: 'app-page',
+  templateUrl: './page.component.html',
+  styleUrls: ['./page.component.scss']
 })
-export class AppComponent implements OnInit {
+export class PageComponent implements OnInit {
+
   title = 'studentmanagement';
 
   constructor(private service:AppServiceService){
